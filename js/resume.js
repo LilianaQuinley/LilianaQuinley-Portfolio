@@ -25,4 +25,17 @@
     target: '#sideNav'
   });
 
+  //card reveal
+
+  $(function(){
+
+    $('#show').on('click',function(){        
+        $('.card-reveal').slideToggle('slow');
+    });
+    
+    $('.card-reveal .close').on('click',function(){
+        $('.card-reveal').slideToggle('slow');
+    });
+});
+
 })(jQuery); // End of use strict
